@@ -20,6 +20,6 @@ final-year cybersecurity student
 ---
 [![](https://visitcount.itsvg.in/api?id=eneamanzi&icon=0&color=0)](https://visitcount.itsvg.in)
 
-<picture>
-  <img src="/github-metrics.svg" alt="Metrics">
+<picture style="display: flex; justify-content: center;">
+  <img src="/github-metrics.svg" alt="Metrics" width="400">
 </picture>
