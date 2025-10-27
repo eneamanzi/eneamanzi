@@ -1,3 +1,7 @@
+<!-- https://github.com/leviarista/github-profile-header-generator?tab=readme-ov-file per generaree immagine -->
+
+![Header](./github-header-banner.png)
+
 # 💫 About Me:
 final-year cybersecurity student
 
