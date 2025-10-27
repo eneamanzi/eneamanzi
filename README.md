@@ -20,4 +20,6 @@ final-year cybersecurity student
 ---
 [![](https://visitcount.itsvg.in/api?id=eneamanzi&icon=0&color=0)](https://visitcount.itsvg.in)
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+<picture>
+  <img src="/github-metrics.svg" alt="Metrics">
+</picture>
