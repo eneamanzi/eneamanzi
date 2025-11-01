@@ -58,5 +58,9 @@ final-year cybersecurity student
 <img src="base.svg" alt="Base Stats">
 <img src="languages.svg" alt="Top Languages">
 <!-- <img src="achievements.svg" alt="GitHub Achievements"> -->
-<img src="skyline.svg" alt="GitHub Skyline">
 
+
+## 🚀 Il mio GitHub Skyline 3D
+Ecco il modello 3D delle mie contribuzioni. Puoi ruotarlo!
+
+https://github.com/eneamanzi/eneamanzi/blob/main/eneamanzi-skyline.stl
