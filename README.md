@@ -68,3 +68,7 @@ Ecco il modello 3D delle mie contribuzioni. Puoi ruotarlo!
 
 https://github.com/eneamanzi/eneamanzi/blob/main/eneamanzi-skyline.stl
 
+
+
+# TEST
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=eneamanzi)](https://github.com/anuraghazra/github-readme-stats)
