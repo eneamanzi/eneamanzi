@@ -55,10 +55,13 @@ final-year cybersecurity student
 
 ### 📊 Le mie Statistiche GitHub
 
-<img src="base.svg" alt="Base Stats">
-<img src="languages.svg" alt="Top Languages">
-<!-- <img src="achievements.svg" alt="GitHub Achievements"> -->
+<p align="center">
+  <img src="base.svg" alt="Base Stats" width="400">
+</p>
 
+<p align="center">
+  <img src="languages.svg" alt="Top Languages" width="350">
+</p>
 
 ## 🚀 Il mio GitHub Skyline 3D
 Ecco il modello 3D delle mie contribuzioni. Puoi ruotarlo!
