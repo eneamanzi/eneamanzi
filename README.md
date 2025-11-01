@@ -72,3 +72,9 @@ https://github.com/eneamanzi/eneamanzi/blob/main/eneamanzi-skyline.stl
 
 # TEST
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=eneamanzi)](https://github.com/anuraghazra/github-readme-stats)
+
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=eneamanzi&repo=FTP-Filezilla)](https://github.com/anuraghazra/github-readme-stats)
+
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=eneamanzi)](https://github.com/anuraghazra/github-readme-stats)
