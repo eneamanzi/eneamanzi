@@ -70,6 +70,11 @@ jobs:
       # 1. Fa il checkout del codice, altrimenti non sa dove salvare il file
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          # Questo forza il checkout a prendere la "testa" del branch (es. main)
+          # invece dello SHA che ha avviato il workflow.
+          # È fondamentale per avere il commit fatto dal job precedente.
+          ref: ${{ github.ref_name }}
 
       # 2. Installa l'estensione gh-skyline
       # (Il 'gh' CLI è già installato nei runner di GitHub)
