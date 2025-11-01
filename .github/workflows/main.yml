@@ -36,7 +36,7 @@ jobs:
           config_timezone: Europe/Rome
           base: ""  # Nascondiamo le statistiche base in questo file
           plugin_achievements: yes
-          plugin_achievements_display: detailed
+          plugin_achievements_display: compact
           
 
       # --- 3. Top Languages ---
@@ -64,4 +64,6 @@ jobs:
           base: ""
           plugin_skyline: yes
           plugin_skyline_year: 2025
+          plugin_skyline_frames: 6
+          plugin_skyline_quality: 1
           repositories_skipped: Esercizi-Asmeta
