@@ -63,4 +63,5 @@ jobs:
           config_timezone: Europe/Rome
           base: ""
           plugin_skyline: yes
+          plugin_skyline_year: 2025
           repositories_skipped: Esercizi-Asmeta
