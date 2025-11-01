@@ -53,17 +53,17 @@ jobs:
           # Aggiungi qui le repo da ignorare, se vuoi
           repositories_skipped: Esercizi-Asmeta
 
-      ## --- 4. GitHub Skyline ---
-      ## Genera il file: skyline.svg
-      #- name: Generate Skyline
-      #  uses: lowlighter/metrics@latest
-      #  with:
-      #    filename: skyline.svg
-      #    token: ${{ secrets.METRICS_TOKEN }}
-      #    config_timezone: Europe/Rome
-      #    base: ""
-      #    plugin_skyline: yes
-      #    plugin_skyline_year: 2025
-      #    plugin_skyline_frames: 6
-      #    plugin_skyline_quality: 1
-      #    repositories_skipped: Esercizi-Asmeta
+      # --- 4. GitHub Skyline ---
+      # Genera il file: skyline.svg
+      - name: Generate Skyline
+        uses: lowlighter/metrics@latest
+        with:
+          filename: skyline.svg
+          token: NOT_NEEDED
+          config_timezone: Europe/Rome
+          base: ""
+          plugin_skyline: yes
+          plugin_skyline_year: 2025
+          plugin_skyline_frames: 6
+          plugin_skyline_quality: 1
+          repositories_skipped: Esercizi-Asmeta
