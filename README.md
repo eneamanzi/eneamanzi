@@ -51,10 +51,10 @@ final-year cybersecurity student
 <picture>
   <img src="./github-metrics.svg" alt="Metrics">
 </picture>
+### 📊 Le mie Statistiche GitHub
 
-### 📊 Le mie Statistiche
+<img src="base.svg" alt="Base Stats">
+<img src="languages.svg" alt="Top Languages">
+<img src="achievements.svg" alt="GitHub Achievements">
+<img src="skyline.svg" alt="GitHub Skyline">
 
-<img src="metrics.plugin.topics.svg" alt="My Starred Topics">
-<img src="metrics.plugin.languages.svg" alt="My Top Languages">
-<img src="metrics.plugin.achievements.svg" alt="My GitHub Achievements">
-<img src="metrics.plugin.skyline.svg" alt="My GitHub Skyline">
