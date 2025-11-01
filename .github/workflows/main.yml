@@ -52,18 +52,53 @@ jobs:
           plugin_languages_limit: 8
           # Aggiungi qui le repo da ignorare, se vuoi
           repositories_skipped: Esercizi-Asmeta
+  
+  # ----- JOB 2: GITHUB-SKYLINE (Aggiungi questo) -----
+  github-skyline:
+    runs-on: ubuntu-latest
+    
+    # Questa riga è FONDAMENTALE: 
+    # Dice ad Actions di aspettare che il job "github-metrics" finisca
+    # prima di iniziare questo. Evita conflitti di scrittura!
+    needs: github-metrics
+    
+    # Diamo anche a questo job il permesso di scrivere sul repository
+    permissions:
+      contents: write 
+      
+    steps:
+      # 1. Fa il checkout del codice, altrimenti non sa dove salvare il file
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      # --- 4. GitHub Skyline ---
-      # Genera il file: skyline.svg
-      - name: Generate Skyline
-        uses: lowlighter/metrics@latest
+      # 2. Installa l'estensione gh-skyline
+      # (Il 'gh' CLI è già installato nei runner di GitHub)
+      - name: Install gh-skyline extension
+        run: gh extension install github/gh-skyline
+        env:
+          # Usa il token standard di GitHub Actions per autenticarsi
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # 3. Genera il file STL
+      - name: Generate STL file
+        run: |
+          # ⬇️ MODIFICA QUI IL TUO USERNAME ⬇️
+          USER="eneamanzi"
+          
+          echo "Generando lo skyline per $USER..."
+          # Genera il file .stl nominandolo (es.) TUO-USERNAME-QUI-skyline.stl
+          gh skyline --user $USER --output "${USER}-skyline.stl"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # 4. Fa il commit automatico del file .stl nel repository
+      # Useremo un'azione semplice che fa tutto da sola
+      - name: Commit and push STL file
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          filename: skyline.svg
-          token: NOT_NEEDED
-          config_timezone: Europe/Rome
-          base: ""
-          plugin_skyline: yes
-          plugin_skyline_year: 2025
-          plugin_skyline_frames: 6
-          plugin_skyline_quality: 1
-          repositories_skipped: Esercizi-Asmeta
+          commit_message: '🤖 CI: Aggiorna file GitHub Skyline'
+          # Specifica che deve committare SOLO i file .stl
+          file_pattern: '*.stl' 
+          # Imposta l'autore del commit come "Bot"
+          commit_user_name: 'GitHub Actions Bot'
+          commit_user_email: 'github-actions[bot]@users.noreply.github.com'
