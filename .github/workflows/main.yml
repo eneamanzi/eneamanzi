@@ -14,7 +14,52 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: lowlighter/metrics@latest
+      # --- 1. Starred Topics ---
+      # Genera il file: metrics.plugin.topics.svg
+      - name: Generate Starred Topics
+        uses: lowlighter/metrics@latest
         with:
+          filename: metrics.plugin.topics.svg
           token: ${{ secrets.METRICS_TOKEN }}
           config_timezone: Europe/Rome
+          base: ""  # Non mostrare le statistiche "base" in questo file
+          plugin_topics: yes
+          plugin_topics.mode: starred
+          plugin_topics.icons: yes
+          plugin_topics.limit: 15
+
+      # --- 2. Top Languages ---
+      # Genera il file: metrics.plugin.languages.svg
+      - name: Generate Top Languages
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.languages.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          config_timezone: Europe/Rome
+          base: ""
+          plugin_languages: yes
+          plugin_languages.limit: 8
+
+      # --- 3. Achievements ---
+      # Genera il file: metrics.plugin.achievements.svg
+      - name: Generate Achievements
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.achievements.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          config_timezone: Europe/Rome
+          base: ""
+          plugin_achievements: yes
+          plugin_achievements.display: compact
+
+      # --- 4. Skyline ---
+      # Genera il file: metrics.plugin.skyline.svg
+      - name: Generate Skyline
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.skyline.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          config_timezone: Europe/Rome
+          base: ""
+          plugin_skyline: yes
+        
