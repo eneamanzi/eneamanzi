@@ -57,6 +57,6 @@ final-year cybersecurity student
 
 <img src="base.svg" alt="Base Stats">
 <img src="languages.svg" alt="Top Languages">
-<img src="achievements.svg" alt="GitHub Achievements">
+<!-- <img src="achievements.svg" alt="GitHub Achievements"> -->
 <img src="skyline.svg" alt="GitHub Skyline">
 

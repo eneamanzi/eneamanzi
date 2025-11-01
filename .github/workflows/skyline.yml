@@ -1,0 +1,31 @@
+name: GitHub Skyline
+on:
+  # Esegue ogni giorno (stessa ora di metrics)
+  schedule:
+    - cron: '0 0 * * *'
+  # Permette di eseguirlo manualmente
+  workflow_dispatch:
+  # (optional) Run workflow when pushing on master/main
+  push: {branches: ["master", "main"]}
+
+jobs:
+  generate-skyline:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Permesso per fare il commit dei file generati
+
+    steps:
+      # Step 1: Fa il checkout della tua repository
+      - uses: actions/checkout@v4
+
+      # Step 2: Esegue l'azione ufficiale di Skyline
+      - uses: github/gh-skyline@v1
+        with:
+          # (Obbligatorio) Specifica il tuo username
+          user: eneamanzi
+          
+          # (Opzionale) Anno da mostrare (default è l'anno corrente)
+          year: 2025 # Puoi cambiare o rimuovere questa riga
+
+          # (Opzionale) Nome del file SVG di output
+          output: skyline.svg

@@ -26,17 +26,17 @@ jobs:
           base: header, activity, community,  repositories, metadata # Puoi personalizzare quali sezioni base mostrare
           repositories_skipped: Esercizi-Asmeta
 
-      # --- 2. Achievements ---
-      # Genera il file: achievements.svg
-      - name: Generate Achievements
-        uses: lowlighter/metrics@latest
-        with:
-          filename: achievements.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          config_timezone: Europe/Rome
-          base: ""  # Nascondiamo le statistiche base in questo file
-          plugin_achievements: yes
-          plugin_achievements_display: compact
+      ## --- 2. Achievements ---
+      ## Genera il file: achievements.svg
+      #- name: Generate Achievements
+      #  uses: lowlighter/metrics@latest
+      #  with:
+      #    filename: achievements.svg
+      #    token: ${{ secrets.METRICS_TOKEN }}
+      #    config_timezone: Europe/Rome
+      #    base: ""  # Nascondiamo le statistiche base in questo file
+      #    plugin_achievements: yes
+      #    plugin_achievements_display: compact
           
 
       # --- 3. Top Languages ---
@@ -53,17 +53,17 @@ jobs:
           # Aggiungi qui le repo da ignorare, se vuoi
           repositories_skipped: Esercizi-Asmeta
 
-      # --- 4. GitHub Skyline ---
-      # Genera il file: skyline.svg
-      - name: Generate Skyline
-        uses: lowlighter/metrics@latest
-        with:
-          filename: skyline.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          config_timezone: Europe/Rome
-          base: ""
-          plugin_skyline: yes
-          plugin_skyline_year: 2025
-          plugin_skyline_frames: 6
-          plugin_skyline_quality: 1
-          repositories_skipped: Esercizi-Asmeta
+      ## --- 4. GitHub Skyline ---
+      ## Genera il file: skyline.svg
+      #- name: Generate Skyline
+      #  uses: lowlighter/metrics@latest
+      #  with:
+      #    filename: skyline.svg
+      #    token: ${{ secrets.METRICS_TOKEN }}
+      #    config_timezone: Europe/Rome
+      #    base: ""
+      #    plugin_skyline: yes
+      #    plugin_skyline_year: 2025
+      #    plugin_skyline_frames: 6
+      #    plugin_skyline_quality: 1
+      #    repositories_skipped: Esercizi-Asmeta
