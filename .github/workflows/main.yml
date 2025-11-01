@@ -14,56 +14,50 @@ jobs:
     permissions:
       contents: write
     steps:
-      # --- 1. Starred Topics ---
-      # Genera il file: metrics.plugin.topics.svg
-      - name: Generate Starred Topics
+      # --- 1. Statistiche Base (per "users accounts") ---
+      # Genera il file: base.svg
+      - name: Generate Base Stats
         uses: lowlighter/metrics@latest
         with:
-          filename: metrics.plugin.topics.svg
+          filename: base.svg
           token: ${{ secrets.METRICS_TOKEN }}
           config_timezone: Europe/Rome
-          base: ""  # Non mostrare le statistiche "base" in questo file
-          plugin_topics: yes
-          plugin_topics.mode: starred
-          plugin_topics.icons: yes
-          plugin_topics.limit: 15
+          # Plugin abilitati: solo "base" (che è quello di default)
+          base: header, activity, community,  repositories, metadata # Puoi personalizzare quali sezioni base mostrare
 
-      # --- 2. Top Languages ---
-      # Genera il file: metrics.plugin.languages.svg
+      # --- 2. Achievements ---
+      # Genera il file: achievements.svg
+      - name: Generate Achievements
+        uses: lowlighter/metrics@latest
+        with:
+          filename: achievements.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          config_timezone: Europe/Rome
+          base: ""  # Nascondiamo le statistiche base in questo file
+          plugin_achievements: yes
+          plugin_achievements.display: compact
+
+      # --- 3. Top Languages ---
+      # Genera il file: languages.svg
       - name: Generate Top Languages
         uses: lowlighter/metrics@latest
         with:
-          filename: metrics.plugin.languages.svg
+          filename: languages.svg
           token: ${{ secrets.METRICS_TOKEN }}
           config_timezone: Europe/Rome
           base: ""
           plugin_languages: yes
           plugin_languages.limit: 8
-          plugin_languages.ignored: Esercizi-Asmeta, eneamanzi
+          # Aggiungi qui le repo da ignorare, se vuoi
+          plugin_languages.ignored: Esercizi-Asmeta
 
-      # --- 3. Achievements ---
-      # Genera il file: metrics.plugin.achievements.svg
-      - name: Generate Achievements
-        uses: lowlighter/metrics@latest
-        with:
-          filename: metrics.plugin.achievements.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          config_timezone: Europe/Rome
-          base: ""
-          plugin_achievements: yes
-          plugin_achievements.display: compact
-
-      # --- 4. Skyline ---
-      # Genera il file: metrics.plugin.skyline.svg
+      # --- 4. GitHub Skyline ---
+      # Genera il file: skyline.svg
       - name: Generate Skyline
         uses: lowlighter/metrics@latest
         with:
-          filename: metrics.plugin.skyline.svg
+          filename: skyline.svg
           token: ${{ secrets.METRICS_TOKEN }}
           config_timezone: Europe/Rome
           base: ""
           plugin_skyline: yes
-          plugin_skyline_year: 2020
-          plugin_skyline_frames: 6
-          plugin_skyline_quality: 1
-        
