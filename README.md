@@ -46,11 +46,13 @@ final-year cybersecurity student
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=eneamanzi&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
 
 [![](https://visitcount.itsvg.in/api?id=eneamanzi&icon=0&color=0)](https://visitcount.itsvg.in)
---->
+
 
 <picture>
   <img src="./github-metrics.svg" alt="Metrics">
 </picture>
+--->
+
 ### 📊 Le mie Statistiche GitHub
 
 <img src="base.svg" alt="Base Stats">
