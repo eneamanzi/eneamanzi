@@ -64,3 +64,4 @@ final-year cybersecurity student
 Ecco il modello 3D delle mie contribuzioni. Puoi ruotarlo!
 
 https://github.com/eneamanzi/eneamanzi/blob/main/eneamanzi-skyline.stl
+
