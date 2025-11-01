@@ -24,6 +24,7 @@ jobs:
           config_timezone: Europe/Rome
           # Plugin abilitati: solo "base" (che è quello di default)
           base: header, activity, community,  repositories, metadata # Puoi personalizzare quali sezioni base mostrare
+          repositories_skipped: Esercizi-Asmeta
 
       # --- 2. Achievements ---
       # Genera il file: achievements.svg
@@ -35,7 +36,8 @@ jobs:
           config_timezone: Europe/Rome
           base: ""  # Nascondiamo le statistiche base in questo file
           plugin_achievements: yes
-          plugin_achievements.display: compact
+          plugin_achievements_display: detailed
+          
 
       # --- 3. Top Languages ---
       # Genera il file: languages.svg
@@ -47,9 +49,9 @@ jobs:
           config_timezone: Europe/Rome
           base: ""
           plugin_languages: yes
-          plugin_languages.limit: 8
+          plugin_languages_limit: 8
           # Aggiungi qui le repo da ignorare, se vuoi
-          plugin_languages.ignored: Esercizi-Asmeta
+          repositories_skipped: Esercizi-Asmeta
 
       # --- 4. GitHub Skyline ---
       # Genera il file: skyline.svg
@@ -61,3 +63,4 @@ jobs:
           config_timezone: Europe/Rome
           base: ""
           plugin_skyline: yes
+          repositories_skipped: Esercizi-Asmeta
