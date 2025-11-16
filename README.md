@@ -1,98 +1,66 @@
 <h1 align="center">
-Hey! I am Enea 👋
+Hey! I am Enea
 </h1>
 
 <h3 align="center">
 M.Sc. Cybersecurity Student & Software Developer
 </h3>
 
----
+## About Me:
 
-## 💫 About Me:
+Since I was young, my drive has been the curiosity to understand *how* things work on a deep level.
 
-Fin da giovane, la mia spinta è stata la curiosità di capire *come* funzionano le cose a fondo.
+This mindset has been the common thread throughout my academic journey, leading me to a **B.Sc. in Systems and Network Security** and now to pursue a **M.Sc. in Cybersecurity**.
 
-Questa mentalità è il filo conduttore del mio percorso accademico, che mi ha portato a una laurea in **Sicurezza dei Sistemi e Reti** e ora a proseguire con la magistrale in **Cybersecurity**.
+## Technical Skills
 
----
-
-## 🛠️ Competenze Tecniche
-
-### 1. Linguaggi & Database
+### Languages & Databases
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=c,python,java,mysql,mongodb" alt="Linguaggi & Database" />
+  <img src="https://skillicons.dev/icons?i=c,python,java,mysql,mongodb" alt="Languages & Databases" />
 </p>
 
-### 2. Sistemi & DevOps
+### Systems & DevOps
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=linux,windows,docker,kubernetes,git,github,vscode" alt="Sistemi & DevOps" />
+  <img src="https://skillicons.dev/icons?i=linux,windows,docker,kubernetes,git,github,vscode" alt="Systems & DevOps" />
 </p>
 
-### 3. Sviluppo Web (Conoscenze Marginali)
+### Web Development (Marginal Knowledge)
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=html,css,javascript,php,nodejs" alt="Sviluppo Web" />
+  <img src="https://skillicons.dev/icons?i=html,css,javascript,php,nodejs" alt="Web Development" />
 </p>
 
----
+## Selected Projects
 
-## 📚 Conoscenze Accademiche (Dal mio M.Sc.)
+*The main repositories for these projects are pinned on my profile.*
 
-* Analisi e Gestione del Rischio
-* Privatezza e Protezione Dati
-* Tecniche di Protezione del Software
-* Sicurezza delle Reti
-* Cloud Computing
-* Modellazione e Analisi di Sistemi
+### <a href="https://github.com/eneamanzi/CCT-kubernetes-project" title="DESCRIPTION: A microservices architecture (Producer/Consumer) on Kubernetes to manage asynchronous data streams. | STRATEGIC FOCUS: Implementation of Fault Tolerance (via Kafka) and Scalability (via K8s), with communication secured by TLS and SASL SCRAM-SHA-512 authentication.">Cloud-Native Architecture (K8s, Kafka, Kong)</a>
+*A microservices architecture on Kubernetes that manages asynchronous data streams with Kafka and Kong.*
+* **Technologies:** `Kubernetes`, `Docker`, `Kafka`, `Kong API Gateway`, `MongoDB`
 
----
+### <a href="https://github.com/eneamanzi/FTP-Filezilla" title="DESCRIPTION: From-scratch implementation of the FTP protocol in C. The project includes a multi-threaded server and a client (in a separate repository), both compatible with standard clients and servers. | STRATEGIC FOCUS: Management of low-level Socket Programming, implementation of Active/Passive modes, and file transfer/authentication commands.">FTP Protocol Implementation (Client & Server) in C</a>
+*From-scratch C implementation of the FTP protocol (client & server) with socket programming.*
+* **Technologies:** `C`, `Socket Programming`, `Networking`
 
-## 🚀 Progetti Selezionati
+### <a href="" title="DESCRIPTION: A full-stack web application (CRUD style) that allows users to upload and manage photos with descriptions, and all visitors to view the gallery.">Photo Gallery Manager (Web Project)</a>
+*Simple full-stack (CRUD) web application for managing a photo gallery.*
+* **Technologies:** `HTML`, `CSS`, `JavaScript`, `Node.js`
 
-*I repository principali di questi progetti sono "pinnati" sul mio profilo.*
-
-### 1. <a href="https://github.com/eneamanzi/CCT-kubernetes-project" title="DESCRIZIONE: Un'architettura a microservizi (Producer/Consumer) su Kubernetes per gestire flussi di dati asincroni. | FOCUS STRATEGICO: ImplementAZIONE di Fault Tolerance (via Kafka) e Scalability (via K8s), con comunicazione protetta da TLS e autenticazione SASL SCRAM-SHA-512.">Architettura Cloud-Native (K8s, Kafka, Kong)</a>
-*Un'architettura a microservizi su Kubernetes che gestisce flussi di dati asincroni con Kafka e Kong.*
-* **Tecnologie:** `Kubernetes`, `Docker`, `Kafka`, `Kong API Gateway`, `MongoDB`
-
-### 2. <a href="https://github.com/eneamanzi/FTP-Filezilla" title="DESCRIZIONE: Implementazione from-scratch del protocollo FTP in C. Il progetto include un server multi-thread e un client (in un repository separato), entrambi compatibili con client e server standard. | FOCUS STRATEGICO: Gestione di Socket Programming di basso livello, implementazione delle modalità (Attiva/Passiva) e dei comandi di autenticazione e trasferimento file.">Implementazione Protocollo FTP (Client & Server) in C</a>
-*Implementazione from-scratch in C del protocollo FTP (client & server) con socket programming.*
-* **Tecnologie:** `C`, `Socket Programming`, `Networking`
-
-### 3. <a href="" title="DESCRIZIONE: Un'applicazione web full-stack (stile CRUD) che permette agli utenti di caricare e gestire foto con descrizioni, e a tutti i visitatori di visualizzare la galleria.">Gestore di Gallerie Fotografiche (Progetto Web)</a>
-*Semplice applicazione web full-stack (CRUD) per la gestione di una galleria fotografica.*
-* **Tecnologie:** `HTML`, `CSS`, `JavaScript`, `Node.js`
-
----
-
-## 🎓 Formazione
-
-* **Laurea Magistrale (M.Sc.) in Cybersecurity**
-  * *presso Università degli Studi di Milano*
-* **Laurea (B.Sc.) in Sicurezza dei Sistemi e Reti**
-  * *presso Università degli Studi di Milano*
-
----
-
-## 📈 Le mie Statistiche GitHub
+## My GitHub Stats
 
 <p align="center">
   <img 
     src="https://github-readme-stats.vercel.app/api?username=eneamanzi&show_icons=true&theme=monokai&hide_border=false&hide_rank=true" 
-    alt="Statistiche GitHub di Enea" 
+    alt="Enea's GitHub Stats" 
     width="400" 
   />
   <img 
     src="https://github-readme-stats.vercel.app/api/top-langs/?username=eneamanzi&layout=compact&theme=monokai&hide_border=false" 
-    alt="Linguaggi più usati da Enea" 
+    alt="Enea's Top Languages" 
     width="320" 
   />
 </p>
 
----
-
-## 📬 Contattami
-
-*Puoi connetterti con me tramite i seguenti canali:*
+## Get In Touch
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/eneamanzi/)
 [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:enea.manzi@gmail.com)
