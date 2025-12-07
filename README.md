@@ -45,6 +45,7 @@ This mindset has been the common thread throughout my academic journey, leading 
 *Simple full-stack (CRUD) web application for managing a photo gallery.*
 * **Technologies:** `HTML`, `CSS`, `JavaScript`, `Node.js`
 
+<!---
 ## My GitHub Stats
 
 <p align="center">
@@ -59,6 +60,7 @@ This mindset has been the common thread throughout my academic journey, leading 
     width="320" 
   />
 </p>
+-->
 
 ## Get In Touch
 
